@@ -1,0 +1,128 @@
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer__contacts {
+  margin-right: 70px;
+}
+.footer {
+  background-color: var(--bg-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.connection__item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+}
+.address {
+  margin-top: 20px;
+}
+.connection {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+  font-style: normal;
+}
+.footer__studio {
+  color: var(--button-text-color);
+}
+.connection__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  display: block;
+}
+
+/* !!!!!!!!!JOIN-footer!!!!!!!*/
+.join {
+  display: flex;
+  justify-content: center;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+  margin-bottom: 20px;
+}
+.join__item {
+  height: 44px;
+  width: 44px;
+  & + & {
+    margin-left: 10px;
+  }
+}
+.join__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--button-color);
+  }
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: var(--primary-title-color);
+  }
+}
+.join__icon {
+  height: 20px;
+  width: 20px;
+  fill: var(--button-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.follow__mail {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  color: #ffffff;
+}
+.form {
+  margin-left: 93px;
+}
+.follow {
+  display: flex;
+  justify-content: center;
+}
+
+.follow__btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-title-color);
+  margin-left: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.follow__icon {
+  margin-left: 10px;
+}
