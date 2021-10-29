@@ -11,7 +11,7 @@
   text-align: center;
 }
 .team {
-  display: flex;
+  // display: flex;
 }
 
 .team__item {
@@ -22,6 +22,7 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
+  width: 100%;
 }
 .box {
   padding-top: 30px;
