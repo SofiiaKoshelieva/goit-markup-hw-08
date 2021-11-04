@@ -20,7 +20,7 @@
    
   </head>
   <body>
-    <!-- <header class="header">
+     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a href="./index.html" class="logo">
@@ -57,18 +57,18 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header> 
     <main>
-      <!-- <section class="hero">
-        <div class="container ">
+      <section class="hero">
+        <div class="container hero-container--padding ">
           <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
           <button class="hero__button btn" data-modal-open type="button">Заказать услугу</button>
         </div>
-      </section> -->
-      <!-- <section class="section">
+      </section>
+       <section class="section"> 
         <div class="container">
           <h2 class="section__title visually-hidden">Наши плюсы</h2>
           <ul class="features">
@@ -118,7 +118,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <section class="section section__task">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
@@ -126,6 +126,7 @@
             <li class="task__item">
               <div class="task__wrapper">
               <img
+              srcset="./images/box1.jpg 1x, ./images/task1-2x.jpg 2x"
                 src="./images/box1.jpg"
                 alt="набор текста на клавиатуре"
                 width="370"
@@ -136,6 +137,7 @@
             <li class="task__item">
               <div class="task__wrapper">
               <img
+              srcset="./images/img(1).jpg 1x, ./images/task2-2x.jpg 2x"
                 src="./images/img(1).jpg"
                 alt="использование графического планшета"
                 width="370"
@@ -147,6 +149,7 @@
               <div class="task__wrapper">
 
               <img
+              srcset="./images/img2.jpg 1x, ./images/task3-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="использование телефона"
                 width="370"
@@ -156,17 +159,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <section class=" section section__team">
+      </section>
+       <section class=" section section__team"> 
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                src="./images/img(2).jpg"
-                alt="портрет Игоря Демьяненко "
-                width="270"
-              />
+              <picture> <source srcset="./images/img(2).jpg 1x , ./images/img1-2x.jpg 2x " media="(min-width: 1200px)">
+                <source srcset="./images/team-tab1.jpg 1x , /images/team-tab1-2x.jpg 2x " media="(min-width: 768px)">
+                <source srcset="./images/team-mob1.jpg 1x , /images/team-mob1-2x.jpg 2x " media="(min-width: 480px)">
+                <img src="./images/img(2).jpg" alt="портрет Игоря Демьяненко " width="270" /></picture>
               <div class="box">
                 <h3 class="box__title">Игорь Демьяненко</h3>
                 <p class="box__paragraph">Product Designer</p>
@@ -203,11 +205,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img(3).jpg"
-                alt="портрет Ольги Репиной "
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/img(3).jpg 1x , ./images/img2-2x.jpg 2x " media="(min-width: 1200px)">
+                <source srcset="./images/team-tab2.jpg 1x , /images/team-tab2-2x.jpg 2x " media="(min-width: 768px)">
+                <source srcset="./images/team-mob2.jpg 1x , /images/team-mob2-2x.jpg 2x " media="(min-width: 480px)">
+                <img src="./images/img(3).jpg" alt="портрет Ольги Репиной " width="270" />
+              </picture>
               <div class="box">
                 <h3 class="box__title">Ольга Репина</h3>
                 <p class="box__paragraph">Frontend Developer</p>
@@ -244,11 +247,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img(4).jpg"
-                alt="портрет Николая Тарасова"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/img(4).jpg 1x , ./images/img3-2x.jpg 2x " media="(min-width: 1200px)">
+                <source srcset="./images/team-tab3.jpg 1x , /images/team-tab3-2x.jpg 2x " media="(min-width: 768px)">
+                <source srcset="./images/team-mob3.jpg 1x , /images/team-mob3-2x.jpg 2x " media="(min-width: 480px)">
+                <img src="./images/img(4).jpg" alt="портрет Николая Тарасова" width="270" />
+              </picture>
               <div class="box">
                 <h3 class="box__title">Николай Тарасов</h3>
                 <p class="box__paragraph">Marketing</p>
@@ -285,11 +289,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img.jpg"
-                alt="портрет Михаила Ермакова"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/img(4).jpg 1x , ./images/img4-2x.jpg 2x " media="(min-width: 1200px)">
+                <source srcset="./images/team-tab4.jpg 1x , /images/team-tab4-2x.jpg 2x " media="(min-width: 768px)">
+                <source srcset="./images/team-mob4.jpg 1x , /images/team-mob4-2x.jpg 2x " media="(min-width: 480px)">
+                <img src="./images/img.jpg" alt="портрет Михаила Ермакова" width="270" />
+              </picture>
               <div class="box">
                 <h3 class="box__title">Михаил Ермаков</h3>
                 <p class="box__paragraph">UI Designer</p>
@@ -325,7 +330,7 @@
                     </ul>
         </div>
       </section>
-      <!-- <section class=" section section__customer">
+      <section class=" section section__customer"> 
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="customer">
@@ -368,9 +373,9 @@
                       </a>
             </ul>
         </div>
-      </section> -->
+      </section> 
     </main>
-    <!-- <footer class="footer">
+     <footer class="footer"> 
       <div class="container footer-container">
         <div class="" ><a href="./index.html" class="logo">
           Web<span class="footer__studio">Studio</span>
@@ -440,7 +445,7 @@
         
       </div>
     </div>
-    </footer> -->
+    </footer> 
     <div class="backdrop is-hidden " data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
