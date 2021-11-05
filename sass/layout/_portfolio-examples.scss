@@ -52,6 +52,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+  flex-grow: 1;
 }
 .examples__item {
   margin-bottom: 30px;
@@ -72,6 +73,7 @@
       margin-bottom: 0;
     }
   }
+  flex-direction: column;
 }
 .case {
   padding-left: 24px;
