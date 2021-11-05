@@ -1005,6 +1005,12 @@ a {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .right {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .right {
     margin-left: 70px;
