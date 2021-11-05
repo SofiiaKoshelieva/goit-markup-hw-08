@@ -1145,14 +1145,9 @@ a {
   display: block;
 }
 
-.modal-btn {
-  display: block;
-  margin: 0 auto;
-}
-
 .check-text {
-  font-size: 12px;
-  line-height: 0.85;
+  font-size: 14px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color);
   display: flex;
@@ -1160,13 +1155,6 @@ a {
   position: relative;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .check-text {
-    font-size: 14px;
-    line-height: 1.17;
-  }
 }
 
 .check-text span {
@@ -1180,7 +1168,7 @@ a {
   justify-content: center;
 }
 
-.check-text .modal-checkbox:checked + .check-text span {
+.modal-checkbox:checked + .check-text span {
   background-color: var(--accent-color);
   border: none;
 }
@@ -1190,6 +1178,8 @@ a {
 }
 
 .modal-btn {
+  display: block;
+  margin: 0 auto;
   background-color: var(--button-color);
   color: var(--button-text-color);
   width: 200px;

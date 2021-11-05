@@ -22,16 +22,16 @@
 .modal {
   min-width: 450px;
   min-height: 609px;
-  @media screen and (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
-  }
   background-color: #ffffff;
   border-radius: 4px;
   position: relative;
   transform: scale(1);
   transition: transform 250ms ease;
   padding: 40px;
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .close-btn {
@@ -118,13 +118,9 @@
   padding: 10px;
   display: block;
 }
-.modal-btn {
-  display: block;
-  margin: 0 auto;
-}
 .check-text {
-  font-size: 12px;
-  line-height: 0.85;
+  font-size: 14px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color);
   display: flex;
@@ -132,10 +128,6 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.17;
-  }
   & span {
     width: 15px;
     height: 15px;
@@ -146,15 +138,18 @@
     align-items: center;
     justify-content: center;
   }
-  & .modal-checkbox:checked + & span {
+  .modal-checkbox:checked + & span {
     background-color: var(--accent-color);
     border: none;
   }
 }
+
 .condition {
   color: var(--button-color);
 }
 .modal-btn {
+  display: block;
+  margin: 0 auto;
   background-color: var(--button-color);
   color: var(--button-text-color);
   width: 200px;
